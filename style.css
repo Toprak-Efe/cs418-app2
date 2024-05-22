@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  border-radius: 0.5em;
+  height: 30vh;
+  transition-duration: 0.4s;
+}
+
+video:hover {
+  transform: scale(1.1);
+}
+
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #a8c3ff, #ffdff7, #ffe9c8);
+}
+
+#left {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #ffa7ff, #a7cdff, #caab30) radial-gradient(circle at 50% 0, #ffa7ff, #a7cdff, #cbcbff) radial-gradient(circle at 50% 100%, #f3b15a, #a7cdff, #cbcbff);
+}
+
+#right {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div:has(#quality:focus):is(#panel) {
+  height: 35vh;
+  width: 35vw;
+}
+
+#panel {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  flex-direction: column;
+  width: 30vw;
+  height: 30vh;
+  border-radius: 1em;
+  background-color: aliceblue;
+  transition: width 0.4s, height 0.4s;
+}
+
+#panel:hover {
+  width: 35vw;
+  height: 35vh;
+}
+
+#panel button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 1em;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+#stat {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 1em;
+  font-size: 1em;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+#stat-element {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#control {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#skips {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: row;
+}
+
+#stat-control {
+  margin: 1em;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-inbetween;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+#stream {
+  margin: 1em;
+  margin-bottom: 2em;
+  height: 10%;
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+#stream #link {
+  margin: 1em;
+  width: 13vw
+}
